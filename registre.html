@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exercici, formulari de registre</h1>
+    <form action="formulario.html" method="GET">
+
+        <div>
+            <label for="Nom">Nom:</label>
+            <input type="text" id="Nom" name="Nom" required>
+            <label for="Llinatges">Llinatges:</label>
+            <input type="text" id="Llinatges" name="Llinatges" required>
+        </div>
+
+        <div>
+            <label for="Home">Home:</label>
+            <input type="radio" name="Sexe" id="Home">
+            <label for="Dona">Dona:</label>
+            <input type="radio" name="Sexe" id="Dona">
+            <label for="Altres">Altres:</label>
+            <input type="radio" name="Sexe" id="Altres">
+        </div>
+
+        <div>
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email" placeholder="El teu email" required>
+            <label for="Contrasenya">Contrasenya:</label>
+            <input type="password" minlength="5" maxlength="10" name="Contrasenya" id="Contrasenya" required>
+        </div>
+
+        <div>
+            <label for="Data">Data de Naixament:</label>
+            <input type="date" name="Data" id="Data" required>
+        </div>
+
+        <div>
+            <label for="Condicions">Estic d'acord amb els termes i condicions</label>
+            <input type="checkbox" name="Condicions" id="Condicions" required>
+        </div>
+
+        <input type="submit" name="submit" id="submit" value="submit">
+    </form>
+</body>
+
+</html>
