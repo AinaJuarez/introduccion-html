@@ -110,3 +110,5 @@ nav li::after{
     border: rgb(2, 7, 2) 5px solid;
      
 }
+
+table {text-align: center;}
