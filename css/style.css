@@ -67,6 +67,8 @@ nav a {
     text-decoration: none;
     color: white;
 }
+
+
 nav li{
 
     margin-right: 5px;
@@ -88,15 +90,23 @@ nav li:hover{
     animation: colorines 2s linear infinite;
 }
 
+
+
 nav li::after{
     content: attr(alt);
     display: flex;
     align-items: center;
-    justify-content: centerS;
+    justify-content: center;
 }
 
+/* Esto hace que se muevan los colores al pasar*/
 @keyframes colorines{
     to{
         background-position: 20vw;
     }
+}
+
+.active {
+    border: rgb(2, 7, 2) 5px solid;
+     
 }
