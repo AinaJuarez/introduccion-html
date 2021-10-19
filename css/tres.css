@@ -1,0 +1,10 @@
+td {
+padding: 70px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
