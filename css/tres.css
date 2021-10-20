@@ -7,4 +7,22 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.right {
+    border-right: black 1px solid;
+}
+
+.left {
+    border-left: black 1px solid;
+}
+
+.bottom {
+    border-bottom: black 1px solid;
+}
+
+.top {
+    border-top: black 1px solid;
 }
