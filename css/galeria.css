@@ -4,7 +4,6 @@ h1 {
 }
 
 body {
-margin: 50px;
 padding: 0;
 
 }
@@ -13,57 +12,3 @@ img {
     margin: 1%;
     width: 30%;
 }
-
-/* esto es para los enlaces */
-nav ul {
-    display: flex;
-    padding: 0%
-    }
-    
-    nav a {
-        text-decoration: none;
-        color: white;
-    }
-    
-    
-    nav li{
-    
-        margin-right: 5px;
-        list-style-type: none;
-        border-radius: 3px;
-        text-align: center;
-        background-image: linear-gradient(90deg,#00c0ff 0,#ffcf00 49%, #fc4f4f 80%, #00c0ff 100%);
-        border-radius: 5px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        text-transform:uppercase;
-        font-size:20px;
-        font-weight:700;
-        padding: 8px;
-    }
-    
-    nav li:hover{
-        animation: colorines 2s linear infinite;
-    }
-    
-    
-    
-    nav li::after{
-        content: attr(alt);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    /* Esto hace que se muevan los colores al pasar*/
-    @keyframes colorines{
-        to{
-            background-position: 20vw;
-        }
-    }
-    
-    .active {
-        border: rgb(2, 7, 2) 5px solid;
-         
-    }
