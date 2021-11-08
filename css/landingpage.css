@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Pongo un color como variable*/
+:root {
+    --primary--color: #d16105;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    /*Para hacer interlineado*/
+    line-height: 1.5;
+    color: var(--primary--color);
+    /*Le da un color transparente*/
+    background-color: rgba(0,0,0,0.6);
+}
+
+#showcase {
+    background-image: url(../img/nieve.jpg);
+    /* PARA VER EL TEXTO NADA MÁS HAGAMOS SCROLL: con vh le 
+    decimos que siempre coja el mismo numero la pagina,
+    la imagen siempre ocupara toda la pantalla verticalmente
+    aunque se agrande o se haga más pequeña*/
+    height: 100vh;
+    /*La imagen ocupa toda la parte visible con cover*/
+    background-size: cover;
+    background-position: center;
+    /*Para centrar el texto*/
+    display: flex;
+    /*Para centrar todo el texto de la cabecera junto de arriba a abajo*/
+    flex-direction: column;
+    align-items: center;
+    /*Para poner todo el contenido en el centro de la pantalla*/
+    justify-content: center;
+    /*Agrandar el texto*/
+    font-size: 1.3em;
+}
+
+/*Si quiero añadir texto en el css se hace asi =    content: 'hola';*/
+
+#showcase::after {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /*Pone el background en toda la pantalla arriba del todo*/
+    width: 100%;
+    /*Para transparentar toda la pantalla*/
+    height: 100%;
+    /*Define la altura de un elemento*/
+    z-index: 1;
+}
+ 
+/*Para que la letra del centro de la pagina resalte se pone en otr z-index*/
+ h1, p, a {
+    z-index: 2;
+}
+
+/*Para el enlace*/
+.bottom {
+    background-color: var(--primary--color);
+    text-decoration: none;
+    /*Hace mas grande el background*/
+    padding: 3px;
+    color: white;
+    /*Pone los bordes redondos*/
+    border-radius: 5px;
+}
+/*Cuando pasamos por encima del link cambia los colores al reves*/
+.bottom:hover {
+    color: var(--primary--color);
+    background-color: white;
+}
+
+/*Para el texto de abajo*/
+#section-a {
+    text-align: center;
+    padding: 20px;
+}
+
+ /*Creamos una clase porque hay 3 secciones con el mismo estilo*/
+.fonsOrange {
+    background-color: var(--primary--color);
+    color: white;
+}
+
+#section-b {
+    background-color: #f4f4f4;
+}
+
+/*Para que las secciones de abajo se pongan las 3 una al lado de la otra*/
+#section-c {
+    display: flex;
+    background-color: #f4f4f4 ;
+}
+
+/*Todos los div con margen por todo*/
+div{
+    padding: 20px;
+}

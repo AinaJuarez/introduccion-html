@@ -1,4 +1,4 @@
-html {
+.container {
     border: 8px solid #bdc3c7;
     padding: 10px;
     margin-left: 18%;
@@ -12,17 +12,17 @@ div p.titulo {
     color: #3498db;
 }
 
-nav {
+.nav-blog{
     background-color: #bdc3c7;
     display: flex;
     justify-content: center;     
 }
 
-nav ul {
+.ul-blog {
  padding: 20px;
 }
 
-ul {
+.ul-blog {
     list-style-type: none;
     display: inline-block;
     width: 25%;
@@ -30,7 +30,7 @@ ul {
     margin: 0;
 }
 
-nav ul:hover {
+.ul-blog:hover {
     background-color: black;
     color:white;
 }

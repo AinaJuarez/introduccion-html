@@ -14,7 +14,7 @@ h2 {
 }
 
 /* fes que els <li> siguin d'un blau hexadecimal */
-li {
+.li {
     color: #0000ff;
 }
 
@@ -92,7 +92,7 @@ color: blue;
 }
 
 /*Fes que els <a> que hagin estat visitats siguin de color gris */
-a:visited .enlace{
+.enlace:visited {
     color: grey;
 }
 
